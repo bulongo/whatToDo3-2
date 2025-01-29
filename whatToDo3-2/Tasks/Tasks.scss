@@ -1,0 +1,21 @@
+#Tasks {
+  height: 33vh;
+  overflow: hidden;
+  padding: 1rem;
+  background: linear-gradient(to top,#2E2E41, #0F2C33);
+
+  h2 {
+    margin: .5rem;
+    font-size: 1rem;
+  }
+
+  .allTasks {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: scroll;
+
+    // border-radius: 16px;
+
+  }
+}

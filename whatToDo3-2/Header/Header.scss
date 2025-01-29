@@ -1,0 +1,74 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  z-index: 1000;
+  backdrop-filter: blur(40px);
+  background: rgba(9,4, 6, 0.2);
+
+
+  .optionsBtn {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    // border: solid red;
+    cursor: pointer;
+    height: 30px;
+    padding: .3rem;
+    border: solid 1px transparent;
+
+    .line1,.line2 {
+      display: inline-block;
+      height: 1px;
+      background: white;
+    }
+
+    .line1 {
+      width: 35px;
+    }
+
+    .line2 {
+      width: 25px;
+    }
+
+    &:hover {
+      border: solid rgba(255,69,0,0.5) 1px;
+    }
+
+    &:active {
+      background: rgba(255,69,0,0.4);
+      border: solid rgba(255,69,0,0.7) 1px;
+    }
+  }
+
+  .searchBtnContainer {
+    // border: solid red;
+    width: 2rem;
+    position: relative;
+   
+    #searchBtn {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+      // border: solid red;
+
+      .glass {
+        border: solid white 1px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+      }
+
+      .handle {
+        width: 1px;
+        height: 10px;
+        background: white;
+        transform: rotate(-45deg) translate(14px,9px);
+      }
+    }
+  }
+}

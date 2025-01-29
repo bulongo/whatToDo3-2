@@ -1,0 +1,11 @@
+{
+  "name": "whattodo3-2",
+  "version": "1.0.0",
+  "description": "whatToDo3 rewritten with PHP backend",
+  "main": "index.php?name=home",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dustparticle",
+  "license": "ISC"
+}

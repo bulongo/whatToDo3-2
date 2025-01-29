@@ -1,0 +1,31 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  background: linear-gradient(to top,#2E2E41, #0F2C33);
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to top,#2E2E41, #0F2C33);
+  color: #F8B08B;
+}
+
+.mainContainer {
+  overflow: hidden;
+}
+
+.whatToDo {
+  // border: solid red;
+  font-size: 1rem;
+  text-align: center;
+  margin: 2.5rem 4.5rem;
+}
+
+
+

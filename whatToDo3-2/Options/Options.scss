@@ -1,0 +1,56 @@
+@media only screen and (min-width: 360px) {
+  .optionsMenu {
+    &.active {
+       right: 0;
+       transition: 0.3s ease;
+       z-index: 1000;
+    }
+
+    transition: 0.3s ease;
+    right: 100%;
+    backdrop-filter: blur(20px);
+    background: rgba(9,4, 6, 0.3);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    // top: 0;
+    // opacity: .4;
+    position: absolute;
+
+    .optionsItems {
+      display: flex;
+      flex-direction: column;
+      height: 70%;
+      width: 100%;
+      justify-content: space-evenly;
+      align-items: center;
+      // background: blue;
+      margin-bottom: 4rem;
+
+      a {
+        border: solid rgba(255,69,0,0.2) 1px;
+        width: 50%;
+        text-align: center;
+        text-decoration: none;
+        color: #34a183;
+        padding: 1.5rem;
+        transition: 0.3s ease;
+        
+        li {
+          list-style: none;
+        }
+
+        &:hover {
+          background: rgba(255,69,0,0.2);
+          border: solid rgba(255,69,0,0.8) 1px;
+        }
+
+        &:active {
+          background: rgba(255,69,0,0.8);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.Calender {
+  padding: 0 .3rem;
+  // background: green;
+  .header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 15vh;
+    margin: 0 .5rem;
+    
+    .headerTop {
+      display: flex;
+      align-items: center;
+      height: 5vh;
+      font-size: 1.2rem;
+
+    .today {
+      color: white;
+      margin-left: .4rem;
+      // color: #242F49;
+    }
+}
+
+    .headerBottom {
+      // color: #242F49;
+      color: white;
+      width: 40%;
+      font-size: .6rem;    
+    }
+  }
+.headerMiddle {
+    font-size: 1.3rem;
+  }
+
+
+  .mainCalender {
+    display: flex;
+    flex-direction: column;
+    // background:#242F49;
+
+    .daysOfWeek {
+      padding: 1rem 0;
+      display: grid;
+      grid-template-columns: repeat(7,1fr);
+
+       span {
+         display: flex;
+         justify-content: center;
+         margin: 0.3rem;
+       }
+    }
+
+    .daysInMonth {
+      display: grid;
+      grid-template-columns: repeat(7,1fr);
+      margin-bottom: 1rem;
+
+      .todaysDay {
+        background: rgba(255,69,0,0.3);
+        border: solid orangered 1px;
+      }
+
+
+      li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid transparent 1px;
+
+        a {
+          // color: #2E2E41;
+          color: white;
+          padding: .8rem;
+          text-decoration: none;
+        }
+
+        &:active {
+          border: solid orangered 1px;
+        }
+      }
+    }
+
+    .emptyDaysInMonth {
+      display: grid;
+      grid-template-columns: repeat(7,1fr);
+
+      .todaysDay {
+        background: rgba(255,69,0,0.3);
+        border: solid orangered 1px;
+      }
+
+
+      li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid transparent 1px;
+
+        a {
+          // color: #2E2E41;
+          color: white;
+          padding: .8rem;
+          text-decoration: none;
+        }
+      }
+    }
+
+  }
+}
+
